@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #EBEEF3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3F3D56;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.robot_img{
+    width: 300px;
+    margin: 20px;
+}
+
+section{
+    width: 500px;
+    height: 700px;
+    padding: 30px;
+
+    border-radius: 20px;
+    background: #EBEEF3;
+    box-shadow: -8px -8px 20px 0px #FFF, 8px 8px 20px 0px rgba(87, 102, 132, 0.38);
+    display: flex;
+}
+
+.chat__message{
+    width: 300px;
+    min-height: 80px;
+    flex-shrink: 0;
+    margin: 20px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 20px;
+    background: #EBEEF3;
+    box-shadow: -3px -6px 15px 0px #FFF, 3px 3px 11px 0px rgba(87, 102, 132, 0.38);
+}
+
+.chat__content{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    overflow-y: scroll;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.chat__message p{
+    width: 85%;
+}
+
+.fa{
+    margin: 0 5px;
+}
+
+.chat__message--user{
+    align-self: flex-end;
+}
+
+.fa-user{
+    order: 1;
+}
+
+.chat__form{
+    position: absolute;
+    bottom: 30px;
+}
+
+.chat__form input{
+    width: 434px;
+    height: 60px;
+    padding: 0 20px;
+
+    border: none;
+    border-radius: 20px;
+    background: #EBEEF3;
+    box-shadow: -3px -6px 15px 0px #FFF inset, 3px 3px 11px 0px rgba(87, 102, 132, 0.38) inset;
+}
+
+.chat__form button{
+    width: 46px;
+    height: 46px;
+
+    border: none;
+    border-radius: 14px;
+    color: white;
+    background: #3F3D56;
+    box-shadow: -2px -2px 6px 0px #FFF, 3px 3px 8px 0px rgba(87, 102, 132, 0.38);
+
+    position: absolute;
+    top: 6px;
+    right: 10px;
+
+    cursor: pointer;
+}
+
+.chat__form button:hover,
+.chat__form button:active{
+    background: #6C63FF;
+}
